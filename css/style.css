@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    --font-family: 'Manrope', sans-serif;
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Light-Grayish-Blue);
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px; /* Use max-width instead of width for responsiveness */
+    width: 100%;
+    padding: 0 15px; /* Add padding for better spacing on smaller screens */
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+#drawerID {
+    background-image: url(/images/drawers.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: auto; /* Set a specific height or adjust as needed */
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.paragraph,
+#sndP {
+    color: var(--Grayish-Blue);
+}
+
+#img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#btn {
+    width: 40px;
+    height: 40px;
+}
+.popup {
+    width: 160px;
+    background-color: var(--very-dark-grayish-blue);
+    display: flex;
+    position: absolute;
+    bottom: 66px;
+left: -100px;
+z-index: 9999999 !important;
+}
+.position-relative{
+    top: 10px;
+}
+
+
+#text_Pop{
+    letter-spacing: 5px;
+    color: var(--Grayish-Blue);
+}
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .container{
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    #img {
+        width: 30px;
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+    #drawerID {
+        height: 200px;
+    }
+    .d-md-flex.align-items-center.justify-content-between{
+        display: flex;
+    }
+
+
+
+}
